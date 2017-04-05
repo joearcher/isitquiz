@@ -10,7 +10,7 @@ use App\Subtext;
 class HomeController extends Controller
 {
     public function index(){
-        $check = IsItQuizDay::today(true);
+        $check = IsItQuizDay::today();
         $type = $check ? 'yes' : 'no';
 
         $subtext = Subtext::where('type', $type)->inRandomOrder()->first();
