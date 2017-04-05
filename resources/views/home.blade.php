@@ -13,7 +13,10 @@
                         No. <br/> 
                     </p>
                 @endif
-                <span class="subtext">{{ $subtext->text }}</span> 
+                
+            </div>
+            <div class="col-xs-12 subtext">
+                <p>{{ $subtext->text }}</p> 
             </div>
         </div>
     </div>
