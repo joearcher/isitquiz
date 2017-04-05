@@ -8,6 +8,6 @@ use App\Services\IsItQuizDay;
 class HomeController extends Controller
 {
     public function index(){
-       return view('home')->with('check', IsItQuizDay::today(true));
+       return view('home')->with('check', IsItQuizDay::today());
     }
 }
