@@ -18,9 +18,16 @@
 
 .subtext{
     color: #E4E4E4;
-    font-size:8rem;
-    line-height: 8rem !important;
+    font-size:4rem;
+    line-height: 4rem !important;
     text-align: center;
+}
+
+@media (min-width: $screen-md-min) {
+    .subtext{
+        font-size:8rem;
+        line-height: 8rem !important;
+    }
 }
 
 .creds{
