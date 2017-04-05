@@ -7,15 +7,13 @@
                 @if($check)
                     <p class="yes animated infinite tada">
                         Yes. <br/> 
-                    </p>
-                    <span class="subtext">Woohoo!</span> 
-                    
+                    </p>  
                 @else
                      <p class="no animated shake">
                         No. <br/> 
                     </p>
-                    <span class="subtext">:(&nbsp;</span> 
                 @endif
+                <span class="subtext">{{ $subtext->text }}</span> 
             </div>
         </div>
     </div>
