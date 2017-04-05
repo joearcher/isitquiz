@@ -32,9 +32,12 @@
     <div id="app">
         @yield('content')
     </div>
+    <!-- Button trigger modal -->
     <div class="creds">
         &copy <a href="https://twitter.com/joe_archer">Joe Archer</a>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="/js/app.js"></script>
+    <script src="/js/selector.js"></script>
 </body>
 </html>

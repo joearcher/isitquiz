@@ -30,6 +30,10 @@
     }
 }
 
+.selector-button {
+    margin-top:15px;
+}
+
 .creds{
     position:fixed;
     bottom:10px;
@@ -45,4 +49,12 @@
 
 .creds a:hover{
     text-decoration: underline;
+}
+
+
+#loader{
+    display:none;
+}
+#result {
+    display:none;
 }
