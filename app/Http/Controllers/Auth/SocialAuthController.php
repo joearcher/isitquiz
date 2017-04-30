@@ -21,7 +21,8 @@ class SocialAuthController extends Controller
         $user = User::where('fb_id', $profile->id)->first();
         if($user){
             Auth::logInUsingId($user->id, true);
-            return redirect('/');
+            $message = "Welcome back ".$this->getFirstName($user->name);
+            return redirect('/')->with('message-success', $message);
         }
         else{
             //user not found so create one
@@ -38,7 +39,13 @@ class SocialAuthController extends Controller
             $user->save();
 
             Auth::logInUsingId($user->id, true);
-            return redirect('/');
+            $message = "Thanks for logging in ".$this->getFirstName($user->name);
+            return redirect('/')->with('message-success', $message);
         }
+    }
+
+    private function getFirstName($fullname){
+        $arr = explode(' ', $fullname);
+        return $arr[0];
     }
 }

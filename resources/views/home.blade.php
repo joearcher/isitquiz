@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        @include('message')
         <div class="row">
             <div class="col-xs-12 result text-center">
                 @if($check)
