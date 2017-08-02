@@ -39,7 +39,7 @@ class SocialAuthController extends Controller
             $user->save();
 
             Auth::logInUsingId($user->id, true);
-            $message = "Thanks for logging in ".$this->getFirstName($user->name);
+            $message = "Thanks for logging in ".$this->getFirstName($user->name)." Your email address (".$user->email.") has now been registered with all known porn websites and nigerian spam lists";
             return redirect('/')->with('message-success', $message);
         }
     }
